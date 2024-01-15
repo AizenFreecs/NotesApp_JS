@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="input-container" >
+        <form class="note-form" id="main-form">
+            <div class="input-text">
+                <div class="close-btn">&times;</div>
+               <h1>Title</h1>
+               <input type="text" id="note-title" name="titleText" required>
+               <h1>Content</h1>
+               <textarea type="text" id="note-body" name="bodyText" required></textarea>
+            </div>
+            <div class="input-btn">
+                <button type="submit" id="add-note-btn">Add Note</button>
+            </div>
+        </form>
+    </div>
+    
+    <div class="container">
+        <div class="display-container">
+            <h1> Notes App </h1> 
+            <div class="display-content">
+            <h1>Title</h1>
+            <p class="disp-text" id="disp-title">Title will appear here</p>
+            <h1>Content</h1>
+            <p class="disp-body" id="disp-body">Content will appear here</p>
+            </div>
+        </div>
+        <div class="notes-container">
+            <div class="new-note">
+                <button id="new-note-btn">Create New Note</button>
+            </div>
+            <div class="notes-display">
+                <ul class="notes-list">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
